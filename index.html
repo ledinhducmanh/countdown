@@ -108,20 +108,7 @@
         margin: 10px 0;
         font-family: "FX_LED";
       }
-      .st {
-        position: fixed;
-        left: 5px;
-        bottom: -6px;
-      }
-      #dgnl {
-        font-size: 11px;
-        text-align: right;
-        cursor: pointer;
-        background: #4d4b4b;
-        color: #f5d0fe;
-        padding: 3.6px 7px;
-        border-radius: 4px;
-      }
+      
       i {
         margin-left: 3px;
         margin-right: 7px;
@@ -179,15 +166,9 @@
         </div>
       </div>
     </div>
-    <div class="st">
-      <p id="dgnl"><i class="fa-solid fa-book"></i>Kì Thi Thử</p>
-    </div>
+    
     <script>
-      const dgnlBTN = document.getElementById("dgnl");
-      let endDate = new Date("06/6/2025 00:00:00").getTime();
-      dgnlBTN.onclick = () => {
-        endDate = new Date("05/26/2025 00:00:00").getTime();
-      };
+      let endDate = new Date("06/24/2025 00:00:00").getTime();
       let check = setInterval(function () {
       let now = new Date().getTime();
       let distance = endDate - now;
